@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragment_Rutinas"
+        android:icon="@drawable/running"
+        android:title="Rutinas" />
+
+    <item
+        android:id="@+id/fragment_Recordatorios"
+        android:icon="@drawable/calendar"
+        android:title="Recordatorio"/>
+
+    <item
+        android:id="@+id/fragment_Objetivos"
+        android:icon="@drawable/objetivos"
+        android:title="Objetivos"/>
+
+    <item
+        android:id="@+id/fragment_Perfil"
+        android:icon="@drawable/perfil"
+        android:title="Perfil"/>
+
+</menu>
