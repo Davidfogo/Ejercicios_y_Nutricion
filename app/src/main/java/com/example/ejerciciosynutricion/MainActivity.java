@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.ejerciciosynutricion.Fragments.FragmentObjetivos;
 import com.example.ejerciciosynutricion.Fragments.FragmentPerfil;
@@ -19,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     FragmentRecordatorios Recordatorios = new FragmentRecordatorios();
     FragmentObjetivos Objetivos = new FragmentObjetivos();
     FragmentPerfil Perfil = new FragmentPerfil();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -40,7 +40,7 @@ public class FragmentPerfil extends Fragment {
         txtPeso = fperfil.findViewById(R.id.txtPeso);
         txtAltura = fperfil.findViewById(R.id.txtAltura);
         txtNombre = fperfil.findViewById(R.id.txtNombre);
-
+        Button btnEditar = fperfil.findViewById(R.id.btnEditar);
         db = FirebaseDatabase.getInstance().getReference().child("perfil");
 
 
@@ -53,17 +53,19 @@ public class FragmentPerfil extends Fragment {
                     txtPeso.setEnabled(true);
                     txtAltura.setEnabled(true);
                     txtNombre.setEnabled(true);
+                    btnEditar.setEnabled(true);
                     editar = true;
                 }else{
                     txtPasos.setEnabled(false);
                     txtPeso.setEnabled(false);
                     txtAltura.setEnabled(false);
                     txtNombre.setEnabled(false);
+                    btnEditar.setEnabled(false);
                     editar = false;
                 }
             }
         });
-        Button btnEditar = fperfil.findViewById(R.id.btnEditar);
+
         btnEditar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                     // GUARDAR

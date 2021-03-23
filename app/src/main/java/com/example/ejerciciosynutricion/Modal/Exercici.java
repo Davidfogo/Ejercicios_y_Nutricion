@@ -3,32 +3,54 @@ package com.example.ejerciciosynutricion.Modal;
 import android.media.Image;
 import android.widget.ImageView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Exercici {
+public class Exercici  implements Serializable {
 
-    String nom;
-    int dificultat;
-    double tiempo;
+    String Nombre;
+    String dificultad;
+    String tiempo;
     public String color;
     public String status;
     public  String segundonombre;
-   // ImageView icono;
-    public Exercici(String color, String nom, /*String status,*/ String segundonombre /*ImageView icono */){
+    String tipo;
+
+    public Exercici(){
+
+    }
+
+    public Exercici(String color, String nom, String segundonombre){
         this.color = color;
-        this.nom = nom;
+        this.Nombre = nom;
         this.status = status;
         this.segundonombre = segundonombre;
-        //this.icono=icono;
+
     }
 
-   /* public ImageView getIcono() {
-        return icono;
+    public String getNombre() {
+        return Nombre;
     }
 
-    public void setIcono(ImageView icono) {
-        this.icono = icono;
-    }*/
+    public void setNombre(String nombre) {
+        this.Nombre = nombre;
+    }
+
+    public String getDificultad() {
+        return dificultad;
+    }
+
+    public void setDificultad(String dificultad) {
+        this.dificultad = dificultad;
+    }
+
+    public String getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiempo(String tiempo) {
+        this.tiempo = tiempo;
+    }
 
     public String getColor() {
         return color;
@@ -54,28 +76,12 @@ public class Exercici {
         this.segundonombre = segundonombre;
     }
 
-    public String getNom() {
-        return nom;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public int getDificultat() {
-        return dificultat;
-    }
-
-    public void setDificultat(int dificultat) {
-        this.dificultat = dificultat;
-    }
-
-    public double getTiempo() {
-        return tiempo;
-    }
-
-    public void setTiempo(double tiempo) {
-        this.tiempo = tiempo;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 }
 

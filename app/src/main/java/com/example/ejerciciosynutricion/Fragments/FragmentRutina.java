@@ -35,9 +35,9 @@ public class FragmentRutina extends Fragment {
         frutina =  inflater.inflate(R.layout.fragment_rutina, container, false);
 
         elements = new ArrayList<>();
-        elements.add(new Exercici("#62BAF9","Aeróbicos","Frecuencias cardíacas"));
-        elements.add(new Exercici("#62BAF9","Flexibilidad","Estiramientos, yoga, pilates..."));
-        elements.add(new Exercici("#62BAF9","Fuerza y resistencia","barras y discos, pesas..."));
+        elements.add(new Exercici("#62BAF9","Cardio","Frecuencias cardíacas"));
+        elements.add(new Exercici("#62BAF9","Pilates","Estiramientos, yoga, Flexibilidad..."));
+        elements.add(new Exercici("#62BAF9","Musculación","Fuerza, resistencia..."));
 
         AdapterList AdapterList = new AdapterList(elements, getActivity());
         RecyclerView recyclerView = frutina.findViewById(R.id.lista_recyclerview);
